@@ -16,28 +16,34 @@ The goal is to evaluate whether self-supervised representations learned without 
 ```
 git clone <repo-url>
 ```
+<br>
 
 2. **Install Dependencies**
 ```
 pip install -r requirements.txt
 ```
+<br>
 
 3. **Dataset Setup**
 - Download Data from Kaggle : [Chest X-Ray Images (Pneumonia)](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
 - Extract and place in 'data/' directory
+
+<br>
 
 4. **Pre-trained Model Setup**
 - Download the pre-trained MoCo model from: [Facebook Research CovidPrognosis](https://github.com/facebookresearch/CovidPrognosis)
 - Follow their instructions to obtain the pre-trained weights
 - Place the model weights in `models/` directory
 
+<br>
+
 5. **Run the Project**
-**Fine-tuning the self-supervised model:**
+### **Fine-tuning the self-supervised model:**
 ```
 python ssl_densenet121.py
 ```
 
-**Training and evaluating supervised baselines:**
+### **Training and evaluating supervised baselines:**
 ```
 # Train RedNet model 
 python resnet50.py
