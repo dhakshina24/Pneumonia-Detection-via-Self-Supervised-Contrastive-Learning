@@ -38,14 +38,16 @@ pip install -r requirements.txt
 <br>
 
 5. **Run the Project**
-### **Fine-tuning the self-supervised model:**
+- **Fine-tuning the self-supervised model:**
 ```
 python ssl_densenet121.py
 ```
 
-### **Training and evaluating supervised baselines:**
+<br>
+
+- **Training and evaluating supervised baselines:**
 ```
-# Train RedNet model 
+# Train ResNet model 
 python resnet50.py
 
 # Train DenseNet model
